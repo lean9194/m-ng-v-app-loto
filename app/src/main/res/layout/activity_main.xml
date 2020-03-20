@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="GAME LOTO"
+        android:textColor="#f20"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edtSomin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="30dp"
+        android:hint="Nhập số min"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="6" />
+    <EditText
+        android:id="@+id/edtSomax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtSomin"
+        android:layout_marginTop="30dp"
+        android:hint="Nhập số max"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:maxLength="6" />
+    <Button
+        android:id="@+id/btnRandom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtSomax"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Random" />
+    <TextView
+        android:id="@+id/tvKetqua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRandom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:textColor="#D81B60"
+        android:textSize="20sp"
+        tools:text="1-2-3-4-5-6-7" />
+</RelativeLayout>
