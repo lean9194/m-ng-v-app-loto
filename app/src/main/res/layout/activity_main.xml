@@ -42,10 +42,27 @@
         android:id="@+id/btnRandom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddBound"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Random" />
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnAddBound"
+        android:layout_above="@+id/btnRandom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Reset" />
+    <Button
+        android:id="@+id/btnAddBound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@id/edtSomax"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"
-        android:text="Random" />
+        android:text="Add bound" />
     <TextView
         android:id="@+id/tvKetqua"
         android:layout_width="wrap_content"
